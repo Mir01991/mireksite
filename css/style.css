@@ -1,0 +1,907 @@
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Rajdhani', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 10px;
+    color: #171717;
+    max-width: 1920px;
+}
+
+* > h1 {
+    font-family: 'Rajdhani', 'Arial', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*                Header              */
+
+header .menu {
+    display: none;
+}
+
+
+header {
+    background-image: url(../img/header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header .bg {
+    background-color: rgba(21, 127, 14, 0.5);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .start h1 {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px darkgreen;
+    padding-bottom: 5%;
+}
+
+header .start h2 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px darkgreen;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    padding-bottom: 5%;
+    margin: 2% 23%;
+
+}
+
+header .headerbt {
+    margin-top: 15%;
+    text-align: center;
+
+}
+
+header .headerbt button {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    background-color: transparent;
+    text-shadow: 2px 2px 2px darkgreen;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 3%;
+    text-align: center;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+    header .start h1 {
+        font-size: 54px;
+        letter-spacing: 1px;
+        padding-bottom: 15%;
+    }
+
+    header .start h2 {
+        font-size: 44px;
+        margin: 2% 12%;
+
+    }
+
+    header .headerbt {
+        margin-top: 35%;
+
+    }
+
+    header .headerbt button {
+        font-size: 28px;
+        padding: 3%;
+        margin-right: 1%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+
+    header .start h1 {
+        font-size: 54px;
+        letter-spacing: 1px;
+        padding-bottom: 15%;
+    }
+
+    header .start h2 {
+        font-size: 44px;
+        margin: 2% 12%;
+
+    }
+
+    header .headerbt {
+        margin-top: 35%;
+
+    }
+
+    header .headerbt button {
+        font-size: 28px;
+        padding: 3%;
+        margin-right: 1%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header .bg {
+        background-color: rgba(21, 127, 14, 0.5);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    header .menu {
+        display: block;
+        align-self: flex-start;
+        padding: 3%;
+        width: 100%;
+
+    }
+
+    header .start {
+        margin-bottom: 15%;
+    }
+
+    header .menubt {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 5%
+    }
+
+    header .menubt button {
+        font-size: 25px;
+        font-family: 'Raleway', 'Arial', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 2px darkgreen;
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        margin-right: 2%;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    header .menubt button:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: 1%;
+    }
+
+    header .start h1 {
+        font-size: 54px;
+        letter-spacing: 1px;
+        padding-bottom: 15%;
+    }
+
+    header .start h2 {
+        font-size: 44px;
+        margin: 2% 12%;
+
+    }
+
+    header .headerbt {
+        margin-top: 35%;
+    }
+
+    header .headerbt button {
+        font-size: 28px;
+        padding: 3%;
+        cursor: pointer;
+        transition: .4s;
+        margin-right: 1%;
+    }
+
+    header .headerbt button:hover {
+        background-color: white;
+        color: transparent;
+        text-shadow: 0 0 0 green;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header .menubt {
+        padding: 3%
+    }
+
+    header .menubt button {
+        margin-right: 5%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header .menubt button {
+        font-size: 28px;
+
+    }
+
+    header .menubt {
+        padding: 1%
+    }
+
+    header .menubt button {
+        margin-right: 8%;
+    }
+
+    header .start h1 {
+        letter-spacing: 10px;
+        padding-bottom: 2%;
+    }
+
+    header .headerbt {
+        margin-top: 15%;
+        text-align: center;
+
+    }
+}
+
+/*                  O mnie                       */
+
+.omnie {
+    background-color: #DEF2C8;
+}
+
+.omnie h1 {
+    color: black;
+    padding: 8% 0;
+}
+
+
+.omnie .fotka img {
+    max-height: 50vh;
+    max-width: 50%;
+    border-radius: 10px;
+    margin-left: 25%;
+}
+
+.omnie .opis p {
+    color: black;
+    font-size: 14px;
+    padding: 5%;
+    font-weight: 400;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .omnie {
+        padding-bottom: 5%;
+    }
+
+    .omnie .fotka img {
+        max-height: 30vh;
+        max-width: 30%;
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+
+    .omnie .fotka {
+        float: left;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .omnie .fotka img {
+        max-height: 100vh;
+        max-width: 100%;
+
+    }
+
+    .omnie .opis p {
+        font-size: 16px;
+        padding: 0 5% 5%;
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (orientation: landscape) {
+    .omnie {
+        background-color: #DEF2C8;
+        padding-bottom: 5%;
+    }
+
+    .omnie .fotka img {
+        max-height: 100vh;
+        max-width: 100%;
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+
+    .omnie .fotka {
+        float: left;
+        width: 50%;
+    }
+
+    .omnie .opis p {
+        font-size: 14px;
+        padding: 0 3%;
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    .omnie .fotka img {
+        max-height: 40vh;
+        max-width: 40%;
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+
+    .omnie .fotka {
+        text-align: center;
+    }
+
+    .omnie h1 {
+        font-size: 46px;
+        padding: 4% 0;
+
+    }
+
+
+    .omnie .opis p {
+        font-size: 16px;
+        padding: 0 10% 0 0;
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    .omnie .opis p {
+        font-size: 18px;
+
+    }
+}
+
+/*                        Umiejętności                */
+
+.umiejetnosci {
+    background-color: #C5DAC1;
+}
+
+.umiejetnosci h1 {
+    color: black;
+    padding: 8% 0;
+}
+
+.umiejetnosci p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    padding: 2% 2% 15% 2%;
+    font-weight: 400;
+
+}
+
+.umiejetnosci span {
+    font-weight: 700;
+}
+
+.umiejetnosci .ikonki {
+    text-align: center;
+    font-size: 70px;
+    padding: 2%;
+}
+
+.umiejetnosci .fa-html5 {
+    color: orangered;
+}
+
+.umiejetnosci .fa-css3-alt {
+    color: dodgerblue;
+}
+
+.umiejetnosci .fa-js {
+    color: yellow;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .umiejetnosci h1 {
+        padding: 8% 2%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    .umiejetnosci p {
+        padding: 2%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .umiejetnosci p {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) {
+    .umiejetnosci p {
+        padding: 2% 2% 5% 2%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .umiejetnosci p {
+        padding: 0 10% 5% 10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .umiejetnosci h1 {
+        font-size: 46px;
+    }
+
+    .umiejetnosci p {
+        font-size: 16px;
+
+    }
+
+    .umiejetnosci .ikonki {
+        font-size: 90px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    .umiejetnosci p {
+        font-size: 18px;
+    }
+
+    .umiejetnosci h1 {
+        padding: 3% 0;
+    }
+}
+
+
+/*                    Uslugi              */
+
+
+.uslugi {
+    background-color: #BCD0C7;
+}
+
+.uslugi h1 {
+    color: black;
+    padding: 8% 0;
+}
+
+.uslugi .uitem {
+    text-align: center;
+    padding: 2% 2% 15% 2%;
+    font-size: 14px;
+}
+
+.uslugi .uitem h2 {
+    padding: 2% 0;
+}
+
+.uslugi .uitem p {
+    font-size: 14px;
+}
+
+.uslugi .fa-id-card {
+    color: orangered;
+    font-size: 35px;
+
+}
+
+.uslugi .fa-globe {
+    color: yellow;
+    font-size: 35px;
+
+}
+
+.uslugi .fa-mobile-screen-button {
+    color: lightseagreen;
+    font-size: 35px;
+
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    ..uslugi h1 {
+        padding: 8% 2%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    .uslugi .uitem {
+        padding: 5%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .uslugi .uitem p {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) {
+    .uslugi .uitem {
+        padding: 2% 2% 15% 2%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .uslugi .uitem {
+        padding: 0 10% 10% 10%;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .uslugi .wrapitem {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .uslugi h1 {
+        font-size: 46px;
+    }
+
+    .uslugi .uitem p {
+        font-size: 16px;
+
+    }
+
+    .uslugi .uitem h2 {
+        font-size: 20px;
+
+    }
+
+    .uslugi .uitem {
+        background-color: #CDDCD5;
+        margin: 0 2%;
+        padding: 3% 2%;
+    }
+
+    .uslugi .uitem h2 {
+        padding: 5% 0;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    .uslugi .uitem p {
+        font-size: 18px;
+    }
+
+    .uslugi .uitem {
+        background-color: #CDDCD5;
+        margin: 0 2%;
+        border-radius: 5%;
+    }
+
+    .uslugi .uitem h2 {
+        font-size: 26px;
+    }
+
+    .uslugi h1 {
+        padding: 3% 0;
+    }
+}
+
+/*                      Projekty                        */
+
+.projekty {
+    background-color: #A9B2AC;
+}
+
+.projekty h1 {
+    color: black;
+    padding: 8% 0;
+}
+
+.projekty h2 {
+    padding: 2% 0 4% 0;
+    text-align: center;
+}
+
+.projekty p {
+    font-size: 14px;
+    text-align: center;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.projekty .projekt {
+    background-color: #CBD1CD;
+    padding: 3%;
+}
+
+.projekty .wrapprojekty .projekt .projektfotka {
+    text-align: center;
+
+}
+
+.projekty .wrapprojekty .projekt .projektfotka img {
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .projekty p {
+        padding: 8% 1%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .projekty p {
+        font-size: 16px;
+        padding: 4% 1%;
+    }
+
+    .projekty h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media (orientation: landscape) {
+    .wrapprojekty {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .projekty .projekt {
+        margin: 5% 1%;
+    }
+
+    .projekty .wrapprojekty .projekt .projektfotka {
+        margin: 3% 0;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .projekty h1 {
+        padding: 3% 0;
+        font-size: 46px;
+    }
+
+    .projekty p {
+        font-size: 16px;
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    .projekty h2 {
+        font-size: 20px;
+    }
+
+    .wrapprojekty {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .projekty .projekt {
+        margin: 5% 1%;
+    }
+
+    .projekty .wrapprojekty .projekt .projektfotka {
+        margin: 3% 0;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    .projekty p {
+        font-size: 18px;
+    }
+
+    .projekty h2 {
+        font-size: 26px;
+    }
+
+    .projekty h1 {
+        padding: 3% 0;
+    }
+}
+
+/*                             Contact               */
+
+.contact {
+    background-image: url(../img/email.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact h1 {
+    color: white;
+    padding: 4% 0;
+}
+
+section.contact .bgcontact {
+    background-color: rgba(15, 17, 15, 0.8);
+}
+
+.contact .container {
+    text-align: center;
+    padding: 5% 0;
+}
+
+::placeholder {
+    color: white;
+    opacity: .8;
+}
+
+.container input,
+.container textarea {
+    min-width: 60%;
+    min-height: 30px;
+    padding: 2%;
+    margin: 1%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.container button.send {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    padding: 3% 10%;
+    cursor: pointer;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+    .container input,
+    .container textarea {
+        padding: 3%;
+        font-size: 20px;
+    }
+
+    .container button.send {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .contact .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .container input,
+    .container textarea {
+        padding: 3%;
+        font-size: 20px;
+    }
+
+    .container button.send {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+
+    .contact h1 {
+        padding: 3% 0;
+        font-size: 46px;
+    }
+}
+
+/*                  Footer             */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+footer .languages {
+    align-self: center;
+}
+
+footer .languages p {
+    padding: 5% 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer .languages span {
+    display: block;
+    color: white;
+    border: 1px solid green;
+    text-transform: uppercase;
+    margin: 1% 30% 4% 30%;
+    background-color: green;
+    font-weight: 700;
+    padding: 2% 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer .credits span {
+    display: inline-block;
+    color: green;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1% 0 1% 0;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+footer .credits p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 2%;
+}
+
+@media (orientation: landscape) {
+    footer {
+        display: block;
+    }
+
+    footer .languages {
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 3% 0;
+    }
+
+    footer .credits {
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 4% 0;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    footer {
+        display: block;
+    }
+
+    footer .languages {
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 0;
+    }
+
+    footer .credits {
+        display: block;
+        float: left;
+        width: 50%;
+        margin: 2% 0;
+    }
+}
